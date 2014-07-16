@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">         <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+
+    <!--For Flip Boxes-->
+    
+ <style type="text/css">
+        .flip3d{
+          width: 240px;
+          height: 200px;
+            margin: 10px;
+            float: left;
+        }
+       
+       .flip3d > .front{
+            position: absolute;
+            -webkit-transform: perspective( 600px ) rotateY( 0deg );
+            transform: perspective( 600px ) rotateY( 0deg );
+            background: #D08DD7 ; width: 240px; height: 200px; border-radius: 7px;
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            transition:  -webkit-transform .5s linear 0s;
+            transition: transform .5s linear 0s;
+       }
+
+       .flip3d > .back{
+            position: absolute;
+            -webkit-transform: perspective( 600px ) rotateY( 180deg );
+            transform: perspective( 600px ) rotateY( 180deg );
+            background: #D08DD7 ; width: 240px; height: 200px; border-radius: 7px;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            transition: -webkit-transform .5s linear 0s;
+            transition: transform .5s linear 0s;
+       }
+
+        .flip3d:hover > .front{
+          -webkit-transform: perspective( 600px ) rotateY( -180deg );
+          transform: perspective( 600px ) rotateY( -180deg );
+        }
+        
+        .flip3d:hover > .back{
+          -webkit-transform: perspective( 600px ) rotateY( 0deg );
+          transform: perspective( 600px ) rotateY( 0deg );
+        }
+
+        .image{
+              height: 197px;
+              width: 237px;
+              padding-right: 2px;
+              padding-bottom: 2px;
+              padding-left: 3px;
+              padding-top: 3px;
+        }
+
+        
+       
+</style>
+
+
+
+
+ <style type="text/css">
+    #grad {
+  background: -webkit-linear-gradient(left top, white , #CCCCCC); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, white, #CCCCCC); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, white, #CCCCCC); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, white, #CCCCCC); /* Standard syntax */
+}
+    </style>
+
+</head>
+<body id="grad">
+
+
+
+      <div class="navbar-wrapper">
+      <div class="container">
+        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+         <div class="container">
+           <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Wheels Deals</a>
+              
+
+           </div>
+           <div class="navbar-collapse collapse" style="height: 1px;">
+              <ul class="nav navbar-nav">
+                 <li class="active">
+                  <a href="#"> Home </a>
+                 </li>
+                 <li>
+                   <a href="#about">About</a>
+                 </li>
+                 <li>
+                   <a href="#contact">Contact Us</a>
+                 </li>
+                 <li class="dropdown">
+                       <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+                       <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                  </li>
+                </ul>
+                
+                <form align="left" class="form-inline">
+    <div class="form-group">
+        <label class="sr-only" for="inputEmail">Email</label>
+        <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+    </div>
+    <div class="form-group">
+        <label class="sr-only" for="inputPassword">Password</label>
+        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+    </div>
+    <div class="checkbox">
+        <label style="font-color:white;"><input type="checkbox"> Remember me</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Login</button>
+    <button type="button" class="btn btn-primary">Sign Up</button>
+</form>
+
+             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+<div class="container" style="padding-top:90px; margin-top: 90px; padding-left:40px;">
+     <div class="row">
+               <div class ="flip3d">
+                  <div class="back">
+                        <h2>Mc Laren Slr</h2>
+                        <p>One of the finest made by mercedes and Mc-laren</p>
+                        <button type="button">Add</button>
+                  </div>
+                  <div class="front">
+                        <img src="Images/mclaren-slr-722-edition_wallpaper.jpg" class="image">
+                  </div>
+               </div>
+    
+               <div class ="flip3d">
+                  <div class="back">
+                        Box 1- Back
+                  </div>
+                  <div class="front">
+                        <img src="Images/bmw.jpg" class="image">
+                   </div>
+              </div>
+
+             <div class ="flip3d">
+                   <div class="back">
+                         Box 1- Back
+                  </div>
+                  <div class="front">
+                         <img src="Images/jaguar1.jpg" class="image">
+                  </div>
+            </div>
+
+            <div class ="flip3d">
+                   <div class="back">
+                         Box 1- Back
+                  </div>
+                  <div class="front">
+                         <img src="Images/porsche1.jpg" class="image">
+                  </div>
+            </div>
+
+            <div class ="flip3d">
+                   <div class="back">
+                         Box 1- Back
+                  </div>
+                  <div class="front">
+                         <img src="Images/ferrari.jpg" class="image">
+                  </div>
+            </div>
+
+            <div class ="flip3d">
+                   <div class="back">
+                         Box 1- Back
+                  </div>
+                  <div class="front">
+                         <img src="Images/ford.jpg" class="image">
+                  </div>
+            </div>
+            
+            <div class ="flip3d">
+                   <div class="back">
+                         Box 1- Back
+                  </div>
+                  <div class="front">
+                         <img src="Images/gmc.jpg" class="image">
+                  </div>
+            </div>
+
+            <div class ="flip3d">
+                   <div class="back">
+                         Box 1- Back
+                  </div>
+                  <div class="front">
+                         <img src="Images/tesla.jpg" class="image">
+                  </div>
+            </div>
+
+            <div class ="flip3d">
+                   <div class="back">
+                         Box 1- Back
+                  </div>
+                  <div class="front">
+                         <img src="Images/RVLemonLaw.jpg" class="image">
+                  </div>
+            </div>
+
+            <div class ="flip3d">
+                   <div class="back">
+                         
+                  </div>
+                  <div class="front">
+                         <img src="Images/maserati.jpg" class="image">
+                  </div>
+            </div>
+
+            <div class ="flip3d">
+                   <div class="back">
+                         Box 1- Back
+                  </div>
+                  <div class="front">
+                         <img src="Images/Chavelle.jpg" class="image">
+                  </div>
+            </div>
+
+            <div class ="flip3d">
+                   <div class="back">
+                         Box 1- Back
+                  </div>
+                  <div class="front">
+                         <img src="Images/lambo.jpg" class="image">
+                  </div>
+            </div>
+
+
+
+     </div>
+     </div>
+
+
+
+
+<!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>© 2014 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+      </footer>
+
+    </div>
+
+
+
+
+ <!--bootstrap core javascript,placed at the end of the page so that the pages load faster-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

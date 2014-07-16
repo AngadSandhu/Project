@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>SignUP with Validations</title>
+
+<style type="text/css" media="all">
+	span{
+		width: 175px;
+		display: block;
+		float: left;
+	}
+
+	input{
+		float: left;
+	}
+
+	p{
+		padding-top: 10px;
+		clear: all;
+	}
+
+	h2{
+		padding-top: 20px;
+		clear: all;
+	}
+
+	label{
+		padding-right: 20px;
+	}
+
+	
+    body{
+       
+        background-color: #C7B9B3;
+        background-position: center;
+        height: 100%;
+        width: 100%
+        background-repeat: no-repeat;
+    }
+
+</style>
+</head>
+
+<body background="Images/1375.jpg"> 
+     
+     <form method="POST" action="#">
+
+      <fieldset>
+        <legend><strong>PERSONAL DETAILS</strong></legend>
+         <p><label><span><b>Name</b></span><input type="text" name="Name" placeholder="Angad Sandhu" required></label></p>
+         <p><label><span><b>Email Input: </b></span><input type="email" name="emailInput" placeholder="abc@xyz.com" required></label></p>
+         <p><label><span><b>Password</b></span><input type="password" name="password"></label></p>
+       </fieldset>
+
+
+       <fieldset>
+       <legend><STRONG>VEHICLE SPECIFICATIONS</STRONG></legend>
+         <p><label><span><b>Category</b></span><select name="Category" multiple="multiple" size="1">
+         	   <option selected value="none">Select</option>
+         	   <option value="Sedan">Sedan</option>
+         	   <option value="SUV">SUV</option>
+         	   <option value="Hatchback">Hatchback</option>
+         	   <option value="RV">RV</option>
+         	   <option value="sports car">Sports Car</option>
+         </select></label></p>
+         <p><label><span><b>Company</b></span><select name="Company">
+         	   <option selected value="none">Select</option>
+         	   <option value="Audi">Audi</option>
+         	   <option value="Avanti">Avanti</option>
+         	   <option value="Aston Martin">Aston Martin</option>
+         	   <option value="BMW">BMW</option>
+         	   <option value="Chevrolet">Chevrolet</option>
+         	   <option value="Ferrari">Ferrari</option>
+         	   <option value="Ford">Ford</option>
+         	   <option value="GMC">GMC </option>
+               <option value="Grand Sport">Grand Sport</option>
+         	   <option value="Masseratti">Masseratti</option>
+         	   <option value="Mercedes">Mercedes</option>
+         	   <option value="Nissan">Nissan</option>
+         	   <option value="Porsche">Porsche</option>
+         	   <option value="Volvo">Volvo</option>
+         </select></label></p>
+         <p><label><span><b>Color</b></span><input type="color" name="color"></label></p>
+         <p><label><span><b>Type (Fuel)</b></span><select name="Fuel">
+         	   <option selected value="none">Select</option>
+         	   <option value="diesel">Diesel</option>
+         	   <option value="petrol">Petrol</option>
+         	   <option value="electric">Electric</option>
+         </select></label></p>
+         <p><label><span><b>Date of Purchase</b></span><input type="date" name="date"></label></p>
+         <p><label><span><b>Fuel Consumption ( in mpg)</b></span><input type="number" name="date"></label></p>	       	
+         <p><label><span><b>Price Demanded</b></span><input type="input" name="date"></label></p>
+         <p><label><span><b>Description</b></span><textarea rows="4" cols="50" name="textarea"> Describe more about your vehicle </textarea></label></p>
+         <br>
+         <p><label><span><button type="submit">Submit</button> <button type="button">Save</button>  <button type="button">Clear</button></span></label></p>
+         
+       </fieldset>
+       
+     </form>
+     
+</body>
+</html>

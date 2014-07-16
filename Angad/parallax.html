@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Parallax</title>
+	<meta charset="UTF-8">
+	<style type="text/css">
+            body{
+            	background: url( Images/Aston.png ) fixed; 
+            	margin: 0px;
+            	height: 2000px;
+            	width: 900px;
+            }
+
+            #content_layer{ position: absolute; }
+            #parallax_lyr{
+            	position: fixed;
+            	
+            	width: 100%;
+            	height: 900px;
+            }
+	</style>
+	<script type="text/javascript">
+	        function parallax(){
+                   var parallax_lyr = document.getElementById('parallax_lyr');
+                   parallax_lyr.style.top = -(window.pageYOffset /4 ) + 'px';
+	        }
+            window.addEventListner("scroll",parallax, false);
+	</script>
+</head>
+<body>
+    <div id="parallax_lyr"></div> 
+	<div id="content_layer">
+	  <p>1</p>
+	  <p>1</p>
+      <p>1</p>
+      <p>1</p>
+       <p>1</p>
+<p>1</p>
+<p>1</p>
+<p>1</p>
+<p>1</p>
+<p>1</p>
+<p>1</p>
+<p>1</p>
+<p>1</p>
+<p>1</p>
+<p>1</p>
+<p>1</p>
+<p>1</p>
+<p>1</p>
+<p>1</p>
+<p>1</p>
+<p>1</p>
+<p>1</p>
+<p>1</p>
+
+
+	</div>
+</body>
+</html>
